@@ -24,5 +24,6 @@ dist-ssr
 *.sw?
 
 # custom
+pnpm-lock.yaml
 .env
 TODO.txt
