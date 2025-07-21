@@ -1,0 +1,68 @@
+@use 'variables';
+@use 'fonts';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, #root, body {
+  @apply h-full;
+}
+
+body {
+  @apply bg-background font-montserrat font-normal text-base text-foreground;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  @apply font-semibold;
+}
+
+h1, .h1 {
+  @apply text-2xl;
+}
+
+h2, .h2 {
+  @apply text-xl;
+}
+
+h3, .h3 {
+  @apply text-lg;
+}
+
+h4, .h4 {
+  @apply text-base;
+}
+
+h5, .h5 {
+  @apply text-sm;
+}
+
+h6, .h6 {
+  @apply text-xs;
+}
+
+strong {
+  @apply font-semibold;
+}
+
+b {
+  @apply font-bold;
+}
+
+a {
+  @apply text-primary no-underline transition-opacity hover:opacity-80;
+  //color: var(--tg-theme-link-color);
+}
+
+button {
+  @apply outline-border-none;
+}
+
+input, select {
+  @apply bg-transparent border-primary;
+}
